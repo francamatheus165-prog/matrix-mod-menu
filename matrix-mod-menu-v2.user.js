@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Matrix Mod Menu v2
 // @namespace    https://github.com/francamatheus165-prog/matrix-mod-menu
-// @version      2.0.0
-// @description  Matrix Client mod menu for MineFun.io
-// @author       MathPRIME / Matrix Client
+// @version      2.1.0
+// @description  Updated Matrix Client mod menu for MineFun.io
+// @author       マテウス / Matrix Client
 // @match        https://minefun.io/*
 // @match        https://sandbox.minefun.io/*
 // @run-at       document-start
