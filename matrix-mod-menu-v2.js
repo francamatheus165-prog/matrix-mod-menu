@@ -1,14 +1,6 @@
 /*
  * Matrix Mod Menu v2.1 — authorized Matrix adaptation
  * Maintained by: マテウス / Matrix Client
- * Repository: https://github.com/francamatheus165-prog/matrix-mod-menu
- * Original project: Celestar Mod Menu v2 by thetalkingcat (@thetalkingcat8089)
- * Original repository: https://github.com/celestarminefun
- * Adapted with permission from the original creator.
- *
- * This update incorporates the newer Celestar source supplied for the
- * Matrix Client while preserving the original creator credit.
- */
 
 (function () {
   "use strict";
