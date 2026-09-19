@@ -2,16 +2,22 @@
  * Matrix Mod Menu v2.1.0
  * Matrix Client / マテウス
  * GitHub: https://github.com/francamatheus165-prog/matrix-mod-menu
+ * Repository: https://github.com/francamatheus165-prog/matrix-mod-menu
  * Built for MineFun players.
+ * By a MineFunner, for a MineFunner.
  */
 
 /*
  * Copyright © 2026 Matrix Client / マテウス
  * Matrix Mod Menu v2.1.0
- * Repository: https://github.com/francamatheus165-prog/matrix-mod-menu
- */
 
-const CS_STORAGE_PREFIX = "__matrix_cmm_v2__:";
+ * This Matrix-branded distribution is maintained by Matrix Client / マテウス.
+ * Use and redistribution are subject to the terms provided with this project.
+
+ * See the project LICENSE and CREDITS files for attribution and reuse terms.
+*/
+
+const CS_STORAGE_PREFIX = "__celestar_cmm_v2__:";
 
 function CM_getValue(key, defaultValue) {
   try {
@@ -368,7 +374,7 @@ function CM_toggleFavourite(id) {
     rmbClicks: [],
   };
 
-  window.__matrixCleared = false;
+  window.__celestarCleared = false;
 
   // -- HOOKS
   const GameHooks = {
@@ -1225,13 +1231,13 @@ function CM_toggleFavourite(id) {
   });
 
   /*
-    * Copyright © 2026 Matrix / マテウス
+    * Copyright © 2026 Matrix Client / マテウス
     * ALL RIGHTS RESERVED
 
-    * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-    * permission from the creator (マテウス) is strictly prohibited.
+    * This Matrix-branded distribution is maintained by Matrix Client / マテウス.
+    * Reuse must follow the permissions described in the project license.
 
-    * Permission is REQUIRED for any reuse.
+    * See LICENSE/CREDITS for reuse and attribution terms.
   */
 
   // -- MODS
@@ -1370,7 +1376,7 @@ function CM_toggleFavourite(id) {
       const url = cfg("crosshair.url").trim();
       const size = cfg("crosshair.size");
       const opacity = cfg("crosshair.opacity");
-      const cleared = !!window.__matrixCleared;
+      const cleared = !!window.__celestarCleared;
 
       const sig = `${enabled}|${url}|${size}|${opacity}|${cleared}`;
       if (this._lastSig === sig) return;
@@ -1880,7 +1886,7 @@ function CM_toggleFavourite(id) {
 
       const enabled = !!cfg("keystrokes.enabled");
       const onlyInGame = !!cfg("keystrokes.onlyInGame");
-      const cleared = !!window.__matrixCleared;
+      const cleared = !!window.__celestarCleared;
 
       const shouldShow =
         !cleared &&
@@ -3937,7 +3943,7 @@ function CM_toggleFavourite(id) {
 
           if (this._el) {
             const shouldShow =
-              !window.__matrixCleared &&
+              !window.__celestarCleared &&
               cfg("fps.enabled") &&
               (this._inGame() || this._editMode);
             const d = shouldShow ? "flex" : "none";
@@ -4355,7 +4361,7 @@ function CM_toggleFavourite(id) {
           }
 
           const shouldShow =
-            !window.__matrixCleared &&
+            !window.__celestarCleared &&
             cfg("cps.enabled") &&
             (this._inGame() || this._editMode);
 
@@ -4759,7 +4765,7 @@ function CM_toggleFavourite(id) {
         `;
 
       document.head.appendChild(this._style);
-      window.__matrixCleared = true;
+      window.__celestarCleared = true;
       this._clean = true;
     },
 
@@ -4775,7 +4781,7 @@ function CM_toggleFavourite(id) {
       this._style.remove();
       this._style = null;
 
-      window.__matrixCleared = false;
+      window.__celestarCleared = false;
       this._clean = false;
     },
 
@@ -6092,14 +6098,14 @@ function CM_toggleFavourite(id) {
 
             model.traverse((obj) => {
               if (obj.name === "playerNameSprite") {
-                if (!obj.userData.matrixDamage) {
+                if (!obj.userData.celestarDamage) {
                   if (obj.visible) obj.visible = false;
                   this._hidden.add(obj);
                 }
               }
               if (
-                obj.name === "MatrixDamageIndicator" ||
-                obj.userData.matrixDamage
+                obj.name === "CelestarDamageIndicator" ||
+                obj.userData.celestarDamage
               ) {
                 obj.visible = true;
               }
@@ -9221,7 +9227,7 @@ function CM_toggleFavourite(id) {
     hasOptions: true,
 
     init() {
-      this.styleId = "__matrix_custom_ui";
+      this.styleId = "__celestar_custom_ui";
       this.applyUI();
     },
 
@@ -9354,12 +9360,12 @@ function CM_toggleFavourite(id) {
         }
 
         function applyCSS(css) {
-          const old = document.getElementById("__matrix_custom_ui");
+          const old = document.getElementById("__celestar_custom_ui");
           if (old) old.remove();
           if (!css) return;
 
           const style = document.createElement("style");
-          style.id = "__matrix_custom_ui";
+          style.id = "__celestar_custom_ui";
           style.textContent = css;
           document.head.appendChild(style);
         }
@@ -9399,7 +9405,7 @@ function CM_toggleFavourite(id) {
           cfgSet("customui.name", "");
           cfgSet("customui.enabled", false);
 
-          const style = document.getElementById("__matrix_custom_ui");
+          const style = document.getElementById("__celestar_custom_ui");
           if (style) style.remove();
 
           updateStatus("");
@@ -10362,7 +10368,7 @@ function CM_toggleFavourite(id) {
       const shouldShow =
         !home &&
         cfg("waypoints.enabled") &&
-        !window.__matrixCleared &&
+        !window.__celestarCleared &&
         this._visibleList().length > 0;
 
       const canvas = this._canvas;
@@ -13271,13 +13277,13 @@ function CM_toggleFavourite(id) {
   });
 
   /*
-    * Copyright © 2026 Matrix / マテウス
+    * Copyright © 2026 Matrix Client / マテウス
     * ALL RIGHTS RESERVED
 
-    * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-    * permission from the creator (マテウス) is strictly prohibited.
+    * This Matrix-branded distribution is maintained by Matrix Client / マテウス.
+    * Reuse must follow the permissions described in the project license.
 
-    * Permission is REQUIRED for any reuse.
+    * See LICENSE/CREDITS for reuse and attribution terms.
   */
 
   // -- MENU CSS
@@ -15267,14 +15273,14 @@ input[type="color"]::-webkit-color-swatch {
       }
     });
 
-    const githubTip = document.createElement("a");
-    githubTip.href = "https://github.com/francamatheus165-prog/matrix-mod-menu";
-    githubTip.target = "_blank";
-    githubTip.rel = "noopener noreferrer";
-    githubTip.style.cssText = `
+    const discordTip = document.createElement("a");
+    discordTip.href = "https://github.com/francamatheus165-prog/matrix-mod-menu";
+    discordTip.target = "_blank";
+    discordTip.rel = "noopener noreferrer";
+    discordTip.style.cssText = `
     padding: 7px 13px;
     border-radius: 6px;
-    background: #24292f;
+    background: #4d50f5;
     box-shadow: 0 4px 0 0 rgba(0,0,0,0.5);
     border: 1px solid #000;
     color: #fff;
@@ -15284,17 +15290,17 @@ input[type="color"]::-webkit-color-swatch {
     text-decoration: none;
     transition: 0.3s;
   `;
-    githubTip.textContent = "Open Matrix GitHub";
+    discordTip.textContent = "Open Matrix GitHub";
 
-    githubTip.addEventListener("mouseenter", () => {
-      githubTip.style.transform = "scale(1.03)";
+    discordTip.addEventListener("mouseenter", () => {
+      discordTip.style.transform = "scale(1.03)";
     });
-    githubTip.addEventListener("mouseleave", () => {
-      githubTip.style.transform = "scale(1)";
+    discordTip.addEventListener("mouseleave", () => {
+      discordTip.style.transform = "scale(1)";
     });
 
     wrapper.appendChild(menuTip);
-    wrapper.appendChild(githubTip);
+    wrapper.appendChild(discordTip);
 
     document.body.appendChild(wrapper);
     _lobbyMenuTip = wrapper;
@@ -15334,13 +15340,13 @@ input[type="color"]::-webkit-color-swatch {
   });
 
   /*
-    * Copyright © 2026 Matrix / マテウス
+    * Copyright © 2026 Matrix Client / マテウス
     * ALL RIGHTS RESERVED
 
-    * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-    * permission from the creator (マテウス) is strictly prohibited.
+    * This Matrix-branded distribution is maintained by Matrix Client / マテウス.
+    * Reuse must follow the permissions described in the project license.
 
-    * Permission is REQUIRED for any reuse.
+    * See LICENSE/CREDITS for reuse and attribution terms.
   */
 
   // -- UTILS
@@ -15813,7 +15819,7 @@ input[type="color"]::-webkit-color-swatch {
     }
 
     const payload = {
-      kind: "matrix-profile",
+      kind: "celestar-profile",
       version: 1,
       name: meta.name || "Profile " + slotId,
       color: /^#[0-9A-Fa-f]{6}$/.test(meta.color) ? meta.color : "#7b2fe6",
@@ -15850,8 +15856,8 @@ input[type="color"]::-webkit-color-swatch {
       if (!raw || typeof raw !== "object") return null;
       if (!raw.data || typeof raw.data !== "object") return null;
 
-      const kind = raw.kind || "matrix-profile";
-      if (kind !== "matrix-profile") {
+      const kind = raw.kind || "celestar-profile";
+      if (kind !== "celestar-profile") {
         const proceed = confirm(
           "This file wasn't exported by Matrix. Import anyway?",
         );
@@ -16328,11 +16334,11 @@ input[type="color"]::-webkit-color-swatch {
 })();
 
 /*
-  * Copyright © 2026 Matrix / マテウス
+  * Copyright © 2026 Matrix Client / マテウス
   * ALL RIGHTS RESERVED
 
-  * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-  * permission from the creator (マテウス) is strictly prohibited.
+  * This Matrix-branded distribution is maintained by Matrix Client / マテウス.
+  * Reuse must follow the permissions described in the project license.
 
-  * Permission is REQUIRED for any reuse.
+  * See LICENSE/CREDITS for reuse and attribution terms.
 */
