@@ -1,14 +1,72 @@
 /*
- * Matrix Mod Menu v2.1 — authorized Matrix adaptation
- * Maintained by: マテウス / Matrix Client
- * Repository: https://github.com/francamatheus165-prog/matrix-mod-menu
- * Original project: Celestar Mod Menu v2 by thetalkingcat (@thetalkingcat8089)
- * Original repository: https://github.com/celestarminefun
- * Adapted with permission from the original creator.
- *
- * This update incorporates the newer Celestar source supplied for the
- * Matrix Client while preserving the original creator credit.
+ * Matrix Mod Menu v2.1.0
+ * Matrix Client / マテウス
+ * GitHub: https://github.com/francamatheus165-prog/matrix-mod-menu
+ * Built for MineFun players.
  */
+
+/*
+ * Copyright © 2026 Matrix Client / マテウス
+ * Matrix Mod Menu v2.1.0
+ * Repository: https://github.com/francamatheus165-prog/matrix-mod-menu
+ */
+
+const CS_STORAGE_PREFIX = "__matrix_cmm_v2__:";
+
+function CM_getValue(key, defaultValue) {
+  try {
+    const raw = localStorage.getItem(CS_STORAGE_PREFIX + key);
+    if (raw === null) return defaultValue;
+    return JSON.parse(raw);
+  } catch (e) {
+    return defaultValue;
+  }
+}
+
+function CM_setValue(key, value) {
+  try {
+    localStorage.setItem(CS_STORAGE_PREFIX + key, JSON.stringify(value));
+  } catch (e) {}
+}
+
+function CM_addStyle(css) {
+  const style = document.createElement("style");
+  style.textContent = css;
+  (document.head || document.documentElement).appendChild(style);
+  return style;
+}
+
+const CS_FAV_KEY = CS_STORAGE_PREFIX + "favourites";
+
+function CM_getFavourites() {
+  try {
+    const raw = localStorage.getItem(CS_FAV_KEY);
+    if (!raw) return [];
+    const arr = JSON.parse(raw);
+    return Array.isArray(arr) ? arr : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function CM_setFavourites(list) {
+  try {
+    localStorage.setItem(CS_FAV_KEY, JSON.stringify(list));
+  } catch (e) {}
+}
+
+function CM_isFavourite(id) {
+  return CM_getFavourites().includes(id);
+}
+
+function CM_toggleFavourite(id) {
+  const list = CM_getFavourites();
+  const idx = list.indexOf(id);
+  if (idx === -1) list.push(id);
+  else list.splice(idx, 1);
+  CM_setFavourites(list);
+  return idx === -1;
+}
 
 (function () {
   "use strict";
@@ -1167,11 +1225,11 @@
   });
 
   /*
-    * Copyright © 2026 Matrix / thetalkingcat
+    * Copyright © 2026 Matrix / マテウス
     * ALL RIGHTS RESERVED
 
     * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-    * permission from the creator (thetalkingcat) is strictly prohibited.
+    * permission from the creator (マテウス) is strictly prohibited.
 
     * Permission is REQUIRED for any reuse.
   */
@@ -13213,11 +13271,11 @@
   });
 
   /*
-    * Copyright © 2026 Matrix / thetalkingcat
+    * Copyright © 2026 Matrix / マテウス
     * ALL RIGHTS RESERVED
 
     * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-    * permission from the creator (thetalkingcat) is strictly prohibited.
+    * permission from the creator (マテウス) is strictly prohibited.
 
     * Permission is REQUIRED for any reuse.
   */
@@ -15209,14 +15267,14 @@ input[type="color"]::-webkit-color-swatch {
       }
     });
 
-    const discordTip = document.createElement("a");
-    discordTip.href = "https://github.com/francamatheus165-prog/matrix-mod-menu";
-    discordTip.target = "_blank";
-    discordTip.rel = "noopener noreferrer";
-    discordTip.style.cssText = `
+    const githubTip = document.createElement("a");
+    githubTip.href = "https://github.com/francamatheus165-prog/matrix-mod-menu";
+    githubTip.target = "_blank";
+    githubTip.rel = "noopener noreferrer";
+    githubTip.style.cssText = `
     padding: 7px 13px;
     border-radius: 6px;
-    background: #4d50f5;
+    background: #24292f;
     box-shadow: 0 4px 0 0 rgba(0,0,0,0.5);
     border: 1px solid #000;
     color: #fff;
@@ -15226,17 +15284,17 @@ input[type="color"]::-webkit-color-swatch {
     text-decoration: none;
     transition: 0.3s;
   `;
-    discordTip.textContent = "Join Matrix Discord";
+    githubTip.textContent = "Open Matrix GitHub";
 
-    discordTip.addEventListener("mouseenter", () => {
-      discordTip.style.transform = "scale(1.03)";
+    githubTip.addEventListener("mouseenter", () => {
+      githubTip.style.transform = "scale(1.03)";
     });
-    discordTip.addEventListener("mouseleave", () => {
-      discordTip.style.transform = "scale(1)";
+    githubTip.addEventListener("mouseleave", () => {
+      githubTip.style.transform = "scale(1)";
     });
 
     wrapper.appendChild(menuTip);
-    wrapper.appendChild(discordTip);
+    wrapper.appendChild(githubTip);
 
     document.body.appendChild(wrapper);
     _lobbyMenuTip = wrapper;
@@ -15276,11 +15334,11 @@ input[type="color"]::-webkit-color-swatch {
   });
 
   /*
-    * Copyright © 2026 Matrix / thetalkingcat
+    * Copyright © 2026 Matrix / マテウス
     * ALL RIGHTS RESERVED
 
     * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-    * permission from the creator (thetalkingcat) is strictly prohibited.
+    * permission from the creator (マテウス) is strictly prohibited.
 
     * Permission is REQUIRED for any reuse.
   */
@@ -16270,11 +16328,11 @@ input[type="color"]::-webkit-color-swatch {
 })();
 
 /*
-  * Copyright © 2026 Matrix / thetalkingcat
+  * Copyright © 2026 Matrix / マテウス
   * ALL RIGHTS RESERVED
 
   * This source code is proprietary. Copying, reusing, modifying, redistributing with or without AI without explicit
-  * permission from the creator (thetalkingcat) is strictly prohibited.
+  * permission from the creator (マテウス) is strictly prohibited.
 
   * Permission is REQUIRED for any reuse.
 */
