@@ -1,0 +1,62 @@
+MATRIX MOD MENU PROJECT LICENSE
+
+Copyright (c) 2026 Matrix Client / マテウス.
+
+This document is a project-specific license draft for the Matrix Mod Menu distribution.
+It is not legal advice.
+
+1. Project identity
+2. Matrix Mod Menu is a MineFun client-side modification project.
+3. The Matrix branding, logos, icons, and project-specific assets remain associated with Matrix Client.
+4. The project may contain code and assets adapted under authorization from their original creators.
+5. Attribution must be preserved where required by the original creator or by this project.
+
+6. Authorized source adaptation
+7. The v2.1.0 core was adapted from the authorized Celestar Mod Menu source.
+8. Credit for the original Celestar source is retained in CREDITS.md.
+9. Authorization to adapt the source is acknowledged by the project maintainer.
+
+10. Personal use
+11. Personal use, testing, local modification, and study are permitted for the project as distributed.
+
+12. Modification
+13. You may modify your local copy for personal use.
+14. Do not remove required attribution from source or documentation.
+
+15. Redistribution
+16. Redistribution of modified copies should preserve this license and CREDITS.md.
+17. Do not claim original authorship of third-party source or assets.
+
+18. Commercial use
+19. Commercial redistribution requires separate permission from the relevant rights holders.
+
+20. External assets
+21. Third-party images, texture packs, badges, fonts, and other assets may have separate terms.
+22. Their inclusion in this repository does not automatically transfer ownership.
+
+23. Security and compatibility
+24. The project is provided for testing and use at the user's own discretion.
+25. MineFun may change its client, APIs, UI, or networking behavior without notice.
+
+26. No warranty
+27. The software is provided as-is, without warranties of any kind.
+28. The project does not guarantee compatibility with future MineFun releases.
+
+29. Account responsibility
+30. Users are responsible for their own accounts and for complying with applicable MineFun rules.
+
+31. Copyright
+32. Copyright in original third-party material remains with its respective owners.
+33. Copyright in Matrix-authored project material remains with Matrix Client / マテウス.
+
+34. Contributions
+35. Contributions should include enough context to preserve compatibility and attribution.
+
+36. Official releases
+37. Do not represent unofficial builds as official Matrix releases.
+
+38. Termination
+39. Permission to redistribute may be withdrawn for a particular distribution where required by rights holders.
+
+40. Final terms
+41. By distributing this project, you agree to preserve the attribution and licensing information accompanying the source.
