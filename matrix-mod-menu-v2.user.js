@@ -2,7 +2,7 @@
 // @name         Matrix Mod Menu v2
 // @namespace    https://github.com/francamatheus165-prog/matrix-mod-menu
 // @version      2.1.0
-// @description  Advanced and feature-rich mod menu for MineFun.io
+// @description  Most advanced and feature-rich mod menu for MineFun.io
 // @author       Matrix Client / マテウス
 // @homepageURL  https://github.com/francamatheus165-prog/matrix-mod-menu
 // @supportURL   https://github.com/francamatheus165-prog/matrix-mod-menu
