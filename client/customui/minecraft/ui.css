@@ -1,0 +1,752 @@
+@import url("https://fonts.cdnfonts.com/css/minecraftia");
+
+*,
+*::before,
+*::after {
+    font-family: "Minecraftia", sans-serif !important;
+    -webkit-text-stroke: 0px !important;
+    outline: none !important;
+    text-shadow: 2px 2px #3f3f3f !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #8b8b8b !important;
+    border: 2px solid !important;
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff !important;
+    border-radius: 0px !important;
+}
+
+.banner-helper {
+    display: none !important;
+}
+
+.fragility {
+    background: #000 !important;
+}
+
+.pocket-wrapper .key,
+.creative-list-wrapper.creative-list-cl .mode-selector-layout .active.mode-selector,
+.wrapper-backpack .mode-selector-layout .active.mode-selector,
+.work-bench .title,
+.work-bench .content .item-desc,
+.base-button.primary.craftable.btn-craft,
+.base-button.primary.btn-craft .bg-top,
+.base-button.primary.btn-craft .bg-middle,
+.base-button.primary.btn-craft .bg-bottom,
+.base-button.primary.btn-craft .blick,
+.base-button.primary.launch .bg-top,
+.base-button.primary.launch .bg-middle,
+.base-button.primary.launch .bg-bottom,
+.base-button.primary.launch .blick,
+.furnace .content .title .line,
+.base-button.primary.launch.active-furnace {
+    display: none !important;
+}
+
+.game .item,
+.img.craft-img {
+    background-color: #8b8b8b !important;
+    border: 3px solid !important;
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+    border-radius: 0px !important;
+    --hover-outline: 1px solid #f5c396;
+}
+
+.pocket {
+    background-color: transparent !important;
+    border: black 4px solid !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    padding: 44px 3px !important;
+}
+
+.pocket .item-wrapper .item {
+    background: rgba(43, 44, 48, .72) !important;
+    border-color: #212121 transparent transparent #212121 !important;
+    outline: solid 7px #757575 !important;
+}
+
+.pocket .item-wrapper .item.active {
+    outline: #fbfbfb solid 8.5px !important;
+    box-shadow: 0 0 0 12px #000000 !important;
+    border-color: #acbda8 #c6d9c1 #c6d9c1 #acbda8 !important;
+    z-index: 100;
+}
+
+.pocket .backpack {
+    background: #737762 !important;
+    border: 3px solid !important;
+    border-right: 5px solid !important;
+    border-bottom: 5px solid !important;
+    border-color: #686965 #5a5c50 #5a5c50 #686965 !important;
+    outline: solid 7px #757575 !important;
+    border-radius: 0px !important;
+}
+
+.pocket .backpack .circle {
+    background: #b4bcba !important;
+    border: #76837d solid 2px !important;
+}
+
+.pocket .backpack .x-key {
+    display: none !important;
+}
+
+.items-manager .categories {
+    flex-direction: row-reverse !important;
+    gap: 6px !important;
+    margin-top: -36px !important;
+    margin-left: 90px !important;
+}
+
+.items-manager .category {
+    background: #8b8b8b !important;
+    border: solid 3px !important;
+    border-color: #FFFFFF #565656 transparent #FFFFFF !important;
+    border-radius: 0px !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    outline: 3px solid #000 !important;
+}
+
+.items-manager .category:hover,
+.mode-selector-layout .mode-selector:hover {
+    transform: none !important;
+}
+
+.items-manager .category.active-category {
+    background-color: #218206 !important;
+    border-color: #67a54f #316733 transparent #67a54f !important;
+    outline: 3px solid #e4e8dd !important;
+}
+
+.creative-list-wrapper.creative-list-cl .mode-selector-layout .mode-selector {
+    margin-right: -15px !important;
+}
+
+.wrapper-backpack .mode-selector-layout .mode-selector {
+    margin-right: -5px !important;
+}
+
+.mode-selector-layout .mode-selector {
+    background: #8b8b8b !important;
+    border: solid 3px !important;
+    border-color: #FFFFFF #565656 transparent #FFFFFF !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    outline: 3px solid #000 !important;
+}
+
+.armor {
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+}
+
+.armor-1 .icon-armor,
+.armor-2 .icon-armor,
+.armor-3 .icon-armor,
+.armor-4 .icon-armor {
+    display: none !important;
+}
+
+.armor-1,
+.armor-2,
+.armor-3,
+.armor-4 {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 90% !important;
+}
+
+.armor-1 {
+    background-image: url("https://p.novaskin.me/5491023110.png") !important;
+}
+
+.armor-2 {
+    background-image: url("https://p.novaskin.me/6557645976633344.png") !important;
+}
+
+.armor-3 {
+    background-image: url("https://p.novaskin.me/5505433630.png") !important;
+}
+
+.armor-4 {
+    background-image: url("https://p.novaskin.me/5355607171268608.png") !important;
+}
+
+.armor-3.rarity-0,
+.armor-3.rarity-1,
+.armor-3.rarity-2 {
+    background: #8b8b8b !important;
+}
+
+.avatar-wrapper {
+    position: relative !important;
+}
+
+.avatar-wrapper .armor {
+    position: absolute !important;
+    left: 0 !important;
+    right: auto !important;
+    width: 100px !important;
+    height: 100px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    transform: none !important;
+    background-color: #8b8b8b !important;
+    border: 4.5px solid !important;
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+    border-radius: 0 !important;
+}
+
+.avatar-wrapper .armor-1 {
+    top: 105px !important;
+}
+
+.avatar-wrapper .armor-2 {
+    top: 207px !important;
+}
+
+.avatar-wrapper .armor-3 {
+    top: 3px !important;
+}
+
+.avatar-wrapper .armor-4 {
+    top: 309px !important;
+}
+
+.avatar-wrapper .icon-armor {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+.creative-list,
+.furnace,
+.chest {
+    background: #C0C0C0 !important;
+    border: 4px solid !important;
+    border-color: #FFFFFF #565656 #565656 #FFFFFF !important;
+    border-radius: 5px !important;
+    outline: solid 3px #000000 !important;
+}
+
+.work-bench .content {
+    background-color: #C0C0C0 !important;
+    border: 4px solid !important;
+    border-color: #FFFFFF #565656 #565656 #FFFFFF !important;
+    border-radius: 5px !important;
+    outline: solid 3px #000000 !important;
+    width: 620px !important;
+}
+
+.furnace .content {
+    background: transparent !important;
+    border: none !important;
+}
+
+.furnace .content .progress .progress-line .fraction {
+    background: #8b8b8b !important;
+}
+
+.furnace .content .progress .progress-line:has(.active.fraction) .fraction {
+    background: #fff !important;
+}
+
+.furnace .content .progress .progress-line:has(.active.fraction) .active.fraction {
+    background: #8b8b8b !important;
+}
+
+.quantity-btn,
+.base-button.primary.btn-craft {
+    background: #8b8b8b !important;
+    border: 3px solid !important;
+    border-color: #b5b5b5 #434343 #434343 #b5b5b5 !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    outline: #000 1px solid !important;
+}
+
+.quantity-btn {
+    font-size: 13px !important;
+}
+
+.base-button.primary.btn-craft {
+    width: 186px !important;
+}
+
+.base-button.primary.launch {
+    background: #8b8b8b !important;
+    border: 5px solid !important;
+    border-color: #b5b5b5 #434343 #434343 #b5b5b5 !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    outline: #000 2px solid !important;
+}
+
+.work-bench .content .items {
+    width: 370px !important;
+    background: #373737 !important;
+    border: 3px solid !important;
+    border-color: #000000 #FFFFFF #FFFFFF #000000 !important;
+    padding: 10px 5px !important;
+    margin-left: 8px !important;
+    margin-top: 7px !important;
+    height: 410px !important;
+}
+
+.work-bench .content .craft-items {
+    margin-top: 10px !important;
+}
+
+.work-bench .content .preview {
+    position: absolute !important;
+    margin-top: 340px !important;
+    right: 25px !important;
+}
+
+.work-bench .content .preview .quantity {
+    position: absolute !important;
+    margin-top: 60px !important;
+}
+
+.work-bench .content .preview .preview-item {
+    display: none !important;
+}
+
+.work-bench .content .items .item {
+    width: 78px;
+    height: 73px;
+    background: #d64747 !important;
+    border-color: #dd5e5f #642e2f #642e2f #dd5e5f !important;
+}
+
+.work-bench .content .items .item .img {
+    opacity: 1;
+}
+
+.work-bench .content .items .item.active-craft {
+    background: #8a8a8a !important;
+    border-color: #969696 #5f5d5f #5f5d5f #969696 !important;
+}
+
+.work-bench .content .items .item.active-craft.active {
+    background: #ccd0ff !important;
+    border-color: #eef4ff #7378a0 #7378a0 #eef4ff !important;
+}
+
+.left-backpack-cont {
+    background-color: #C0C0C0 !important;
+    border: 3.5px solid !important;
+    border-color: #FFFFFF #565656 #565656 #FFFFFF !important;
+    border-radius: 5px !important;
+    width: 885px !important;
+    outline: solid 3px #000000 !important;
+}
+
+.avatar-scene {
+    background: #000 !important;
+    margin-left: 102px !important;
+    border: 3px solid !important;
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+    border-radius: 0px !important;
+}
+
+.items-manager .bg-click-area {
+    background: rgba(0, 0, 0, 0.28) !important;
+}
+
+.hand-craft {
+    background: #494949 !important;
+    border-radius: 0px !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border: solid 4px !important;
+    border-color: #737477 #302e30 transparent #737477 !important;
+    outline: solid 3px #000 !important;
+    z-index: -1 !important;
+    margin-top: -0.5px !important;
+    margin-left: -2.5px !important;
+}
+
+.hand-craft .crafts .item {
+    outline: 3px solid #000 !important;
+    border-color: #696969 #e4e4e4 #e4e4e4 #696969 !important;
+    transform: scale(0.92);
+    background: #8b8b8b !important;
+}
+
+.crafts .item .img,
+.crafts .item .count {
+    opacity: 1 !important;
+}
+
+.hand-craft .crafts .active-craft.item {
+    background: #c4c4c5 !important;
+    border-color: #e4e4e4 #696969 #696969 #e4e4e4 !important;
+}
+
+#__cs_inv_manager_toolbar {
+    background: #c4c4c5 !important;
+    border: 3px solid !important;
+    border-color: #e4e4e4 #696969 #696969 #e4e4e4 !important;
+    outline: solid 3px #000 !important;
+    border-radius: 4px !important;
+}
+
+#__cs_creative_search_bar {
+    background: #c4c4c5 !important;
+    top: -3px !important
+}
+
+#__cs_creative_search_bar .__cs_creative_search_input_wrap {
+    background: #8b8b8b !important;
+    border-radius: 0px !important;
+    border: 3.5px solid !important;
+    border-color: #575757 #fefefe #fefefe #575757 !important;
+}
+
+#__cs_creative_search_input::placeholder,
+#__cs_inv_search_input::placeholder {
+    opacity: 0 !important;
+}
+
+.__cs_inv_tool_search {
+    background: #8b8b8b !important;
+    border-radius: 0px !important;
+    border: 3.5px solid !important;
+    border-color: #575757 #fefefe #fefefe #575757 !important;
+}
+
+#__cs_inv_sort_btn {
+    background: #6c6c6c !important;
+    border-radius: 0px !important;
+    border: 3px solid !important;
+    border-color: #a2a2a3 #525353 #525353 #a2a2a3 !important;
+    box-shadow: none !important;
+    outline: #000 2px solid !important
+}
+
+#__cs_creative_search_input,
+#__cs_inv_search_input {
+    color: #fff !important;
+}
+
+.player-list-wrapper.bg-modal-cont {
+    background: transparent !important;
+    justify-content: start !important;
+    align-items: center !important;
+    transform: scale(0.5);
+    margin-top: -24vh !important;
+}
+
+.player-list-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.player-list-content .header {
+    background: #00000082 !important;
+    border: none !important;
+    border-radius: 0 0 0 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.player-list-content .header .name-mode {
+    font-size: 20px !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0) !important;
+}
+
+.player-list-content .header .online-label {
+    display: none !important;
+}
+
+.player-list-content .teams .team {
+    background: transparent !important;
+    border: none !important;
+    gap: 7.5px !important;
+}
+
+.player-list-content .teams .team .player {
+    background: #00000082 !important;
+}
+
+.player-list-content .teams .team .player .name {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0) !important;
+}
+
+.player-list-content .teams .team .player .avatar {
+    border-radius: 0px !important
+}
+
+.messages {
+    background: #000000a2 !important;
+    width: 500px !important;
+    padding: 5px 0 7px 0 !important;
+}
+
+.chat .input-wrapper {
+    gap: 10px !important
+}
+
+.chat .input-wrapper .input {
+    background: #00000099 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    transition: none !important;
+    width: 400px !important;
+    margin-left: -9px !important;
+}
+
+.chat .input-wrapper .input.active-input {
+    width: 0px !important
+}
+
+.chat .input-wrapper .input.active-input~.base-btn.enter {
+    display: none !important;
+}
+
+.chat .input-wrapper .input:not(.active-input)~.base-btn.enter {
+    display: flex !important;
+}
+
+.chat .input-wrapper .input::placeholder {
+    opacity: 0 !important;
+}
+
+.message {
+    background: transparent !important;
+    font-size: 16px !important;
+}
+
+.message .text.color-4 {
+    color: #ffff55 !important
+}
+
+.message .name {
+    color: #fff
+}
+
+.messages .message .name:before {
+    content: "<"
+}
+
+.messages .message .name:after {
+    content: ">"
+}
+
+.base-btn.enter {
+    background: #00000099 !important;
+    border-radius: 0px !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    height: 22px !important;
+    margin-top: 3px !important;
+    padding: 7px 5px !important;
+    font-size: 20px !important;
+}
+
+.messages:not(:has(.message)) {
+    background: transparent !important;
+}
+
+#__cs_item_tooltip {
+    background: #1b101d !important;
+    border-radius: 3px !important;
+    border: solid 3px !important;
+    border-color: #270765 #1e0445 #1b033c #200647 !important;
+    box-shadow: none !important;
+    outline: #1b101d solid 1px !important;
+}
+
+.chat .stats {
+    margin-left: -9px !important;
+}
+
+.coord-icon {
+    display: none !important;
+}
+
+.room.stats-item .room-symbol {
+    opacity: 0 !important;
+    font-size: 6px !important
+}
+
+.room.stats-item:before {
+    content: "Room " !important
+}
+
+.chat .stats .stats-item {
+    border-radius: 0px !important;
+    background: #00000099 !important
+}
+
+
+.hungry-bar.hunger-aligned {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 36px
+}
+
+.hungry-bar.hunger-aligned {
+    position: relative !important;
+    image-rendering: pixelated !important;
+    overflow: hidden !important;
+}
+
+.hungry-bar.hunger-aligned::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABKUlEQVR4AeyXDQ6CMAyFwdNw/9NwG31LhJitjtZttRnPtEHH6M/7XBMei+3zxHatY6ufWRvxq8yYiY0YBRu+nUSGS2xMUCNSTKdt2xato47i+fcaLv2t1kj/bAMjspGB4v4Ueioi4qGUDrVFKun5tIYYUj4st9lURNqkCPI0iQQBcZZBIqcUxi9pcuWOENIkS2u4pTMS0enkt6snEb+qhUxTNbKiwcL3fV9yx76wNhWRsCpbCiMRi1oee29BRDXJ0mTzUPwqxy2IXIkQ6j6JhMKBYqxEigGAGGs68C2ev58cvxE7vZOo3NoIYsc0NhKNC4nMSkScZmhWtf5t4h3T6/OKmKJF/WuJxdYW2UhNnX/cIxEP1aUhgLziACERKBPKSCQUDhQzDZEXAAAA//8aQi4LAAAABklEQVQDANy/pFpVNxVlAAAAAElFTkSuQmCC") !important;
+    background-size: 10% 100% !important;
+    background-repeat: repeat-x !important;
+    background-position: left center !important;
+
+    image-rendering: pixelated !important;
+    pointer-events: none !important;
+}
+
+.hungry-bar.hunger-aligned .hungry-value {
+    position: relative !important;
+    z-index: 1 !important;
+    box-sizing: border-box !important;
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    overflow: hidden !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABcUlEQVR4AeyYsU6CQQzHW2cnH8DXcfEdfAwnH8bE1TjoG5g4G+KKA4GwsQALy8efhDBcC1zhvqM5SvoPSem11/74msAN2V4dwnOF0HpmbaTezYyVohHjwHoPDyK9j9hY4BARsZ0+kVzTK/yp4BLntz68lbdDjZSv1mPGaKTH4Z6Uuiki6kOpPdSPXUea7jDDVO/PD6QJoVo9uM+zpoicNwonp4OIExC7a7RPZIZeU30xk6YVNlSq4f+QNBk22Wa74RZ51j6RvDn4iSpJ5KJdNdUIY5RCT3Cmerm/JU0f3wNKheOqaQtADTQ6myJi7N1neBDxxuUqiIhN9jtakKa/8ZxSDSZLylUJuldBpMSgquUIItVGnVnISkQsANRhbQG8/UwpVx3+ndGE3JvfJFmyNoLcPi0a8cYliLRKRN1maDbLz8zELLVnkyGtNK9fLXnTI55o5MiAqn8cRGqMnFkuANRlTUEEU3FlQcQVDlymGSJrAAAA//8FfGkbAAAABklEQVQDADeZHGn7RayoAAAAAElFTkSuQmCC") !important;
+    background-size: 38px 100% !important;
+    background-repeat: repeat !important;
+    background-position: left center !important;
+
+    image-rendering: pixelated !important;
+}
+
+.hungry-bar.hunger-aligned .hungry-value-text {
+    display: none !important;
+}
+
+.hp-bar {
+    margin-left: 6px !important
+}
+
+.hp-bar .hp-heart {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 38px !important;
+    height: 38px !important;
+    margin-bottom: 3px !important;
+    margin-left: -6px !important;
+
+    color: transparent;
+}
+
+.hp-bar .hp-heart:has(path[fill="#FF0A36"]) {
+    background-image: url("https://art.pixilart.com/699fb46a495e3d1.png");
+}
+
+.hp-bar .hp-heart:has(path[fill="#7E0017"]) {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA1ElEQVR4AeyUAQ6DMAhF6w7S+5+rF9n+NwNhEa2JTmK6QKDlt/68JnuV7d8b4ygxchHpuO+EdrFnwGov6YeBNQJ8szlrrSVKvMeskRrpuC+ab0VZYs3AMv1Dl8JAiHILANHa7NVC576XggBM3ReDwCAwCAwCJDDhb0iztVYksX9KyH2suFC/xZ4GUO+LlAYUEZHZ7OVkz7DHOb0TvYuUBJzDqxfpCdi3m/iekr9kZJ8VM3cO6zDSEwidnzU4SkDRErVNGNIZ+u44aqD74l7h8w3skfgAAAD//7xEPOQAAAAGSURBVAMAFRNoPTqJfFQAAAAASUVORK5CYII=");
+}
+
+.hp-bar .hp-heart path {
+    opacity: 0 !important;
+}
+
+
+.armor-indicator .armor-shield {
+    width: 38px;
+    height: 38px;
+    box-sizing: border-box;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAbUlEQVR4AZSOMRKAIAwEg/+303dY2Ghvx1u0t8LbKIxCJcORcFlCOrtXUkAKZXNHBpT247Rl3ai6qeTjAVmMUb4VkAfZo+DQPE/kLgBPdGQfKIxDL6vdjx+A2mrl/IP4v1ZumDv5XMzwlqAg2QUAAP//koG5iAAAAAZJREFUAwABkjkOGXXAKAAAAABJRU5ErkJggg==");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
+    margin-top: -10px !important;
+    content: "";
+    color: transparent;
+    font-size: 0;
+    text-indent: -9999px;
+    object-fit: none;
+    object-position: -9999px -9999px;
+}
+
+
+.armor-indicator .armor-points {
+    color: #000;
+    margin-top: -4px !important;
+    margin-left: 1px !important;
+}
+
+.key-prompt-wrapper .settings,
+.esc-key .img-ic,
+.key-prompt-wrapper img,
+.key-prompt-wrapper .camera,
+.key-prompt-wrapper.camera-key .img-ic.img-ic-anim,
+.key-prompt-wrapper.b-key .shop,
+.map-key .map-icon,
+.left-bottom .icon-map,
+.key-prompt-wrapper.r-key .achievements-icon {
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
+    font-size: 0;
+    object-position: -9999px -9999px;
+}
+
+.key-prompt-wrapper .settings,
+.esc-key .img-ic {
+    background-image: url("https://minecraft.wiki/images/Ore_UI_-_%22Wrench%22_Icon.png?912b4&format=original") !important;
+}
+
+.key-prompt-wrapper img {
+    background-image: url("https://minecraft.wiki/images/Ore_UI_-_%22Steve_and_Alex_Face_2%22_Icon.png?e171b&format=original");
+}
+
+.key-prompt-wrapper .camera,
+.key-prompt-wrapper.camera-key .img-ic.img-ic-anim {
+    background-image: url("https://minecraft.wiki/images/Ore_UI_-_%22Controller%22_Icon.png?21a7f&format=original") !important;
+}
+
+.key-prompt-wrapper.b-key .shop {
+    background-image: url("https://minecraft.wiki/images/Ore_UI_-_%22Marketplace%22_Icon.png?81380&format=original") !important;
+}
+
+.map-key .map-icon,
+.left-bottom .icon-map {
+    background-image: url("https://minecraft.wiki/images/Ore_UI_-_%22Overworld_Sun_Sunset%22_Icon.png?175c4&format=original") !important;
+}
+
+.key-prompt-wrapper.r-key .achievements-icon {
+    background-image: url("https://minecraft.wiki/images/Ore_UI_-_%22Enchanted_Book_with_Glowing%22_Icon.png?ede54&format=original") !important;
+}
+
+.key-prompt-wrapper .key,
+.map-key,
+.esc-key .key,
+.left-bottom .key.key-map-text {
+    font-size: 25px;
+    text-shadow: 2px 4px 0px rgba(0, 0, 0) !important;
+}

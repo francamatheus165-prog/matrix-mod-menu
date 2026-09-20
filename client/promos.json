@@ -1,0 +1,16 @@
+[
+  {
+    "image": "https://raw.githubusercontent.com/francamatheus165-prog/matrix-mod-menu/main/img/gaf.png",
+    "title": "Play Grow A Farm",
+    "subtitle": "Featured MineFun custom game",
+    "url": "https://minefun.io/custom-games/6a33a9ca020e2ac626d8d0b3",
+    "external": false
+  },
+  {
+    "image": "https://raw.githubusercontent.com/francamatheus165-prog/matrix-mod-menu/main/img/logo.png",
+    "title": "Matrix Client 2.0",
+    "subtitle": "Open the Matrix Client repository",
+    "url": "https://github.com/francamatheus165-prog/matrix-mod-menu",
+    "external": true
+  }
+]
